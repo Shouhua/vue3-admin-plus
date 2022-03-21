@@ -46,6 +46,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/user',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/user'),
+        name: 'User',
+        meta: { title: 'User', icon: 'example' }
+      }
+    ]
+  },
+  {
     path: '/setting-switch',
     component: Layout,
     children: [

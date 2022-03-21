@@ -66,7 +66,7 @@ service.interceptors.response.use(
     if (isNeedUpdateToken) {
       setToken(updateToken)
     }
-    const successCode = '0,200,20000'
+    const successCode = '0,200,201,20000'
     if (successCode.includes(code)) {
       //业务成功处理
       return res.data
